@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange: #FF6B35;
+  --orange-dark: #E5531A;
+  --bg: #111111;
+  --surface: #1A1A1A;
+  --surface2: #242424;
+  --text: #F5F5F5;
+  --muted: #8A8A8A;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); }
