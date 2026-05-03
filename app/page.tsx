@@ -71,7 +71,7 @@ function Hero() {
         <div className="relative z-10">
           <Reveal>
             <div className="inline-flex items-center gap-2 bg-[#FF6B35]/10 border border-[#FF6B35]/30 px-3 py-1.5 mb-8 w-fit">
-              <span className="w-2 h-2 rounded-full bg-[#FF6B35] animate-pulse" />
+              <span data-cg-el="hero_eyebrow" className="w-2 h-2 rounded-full bg-[#FF6B35] animate-pulse" />
               <span className="font-body text-[#FF6B35] text-xs uppercase tracking-[0.2em]">Austin, TX · Private Studio</span>
             </div>
           </Reveal>
@@ -81,7 +81,7 @@ function Hero() {
             </h1>
           </Reveal>
           <Reveal delay={160}>
-            <p className="font-body text-[#8A8A8A] text-lg leading-relaxed max-w-sm mb-8">
+            <p data-cg-el="hero_subtitle" className="font-body text-[#8A8A8A] text-lg leading-relaxed max-w-sm mb-8">
               1-on-1 personal training in Austin. No crowds, no generic plans — just focused coaching built entirely around you.
             </p>
           </Reveal>
