@@ -35,15 +35,14 @@ function Header() {
   return (
     <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#111111]/96 backdrop-blur border-b border-[#242424]' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-heading text-xl font-black tracking-widest uppercase">
+        <a href="#" data-cg-el="nav_logo_text"
           <span className="text-[#FF6B35]">GRIND</span><span className="text-white"> PT</span>
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {['Trainers', 'Programs', 'Pricing', 'Contact'].map(l => (
             <a key={l} href={`#${l.toLowerCase()}`} className="font-body text-sm text-[#8A8A8A] hover:text-white uppercase tracking-wider transition-colors">{l}</a>
           ))}
-          <a href={`${koriva.baseUrl}/book?slug=${koriva.gymSlug}`} className="bg-[#FF6B35] hover:bg-[#E5531A] text-white font-heading font-bold text-sm uppercase tracking-wider px-5 py-2.5 transition-colors">
-            Book Free Consult
+          <a href="#" data-cg-el="hero_cta_primary" text-white font-heading font-bold text-sm uppercase tracking-wider px-5 py-2.5 transition-colors">Book Free Consult
           </a>
         </nav>
         <button onClick={() => setOpen(!open)} className="md:hidden text-white">{open ? <X size={24} /> : <Menu size={24} />}</button>
@@ -77,7 +76,7 @@ function Hero() {
             </div>
           </Reveal>
           <Reveal delay={80}>
-            <h1 className="font-heading font-black text-[clamp(3.5rem,7vw,7rem)] text-white uppercase leading-[0.9] mb-6">
+            <h1 data-cg-el="hero_headline_1" className="font-heading font-black text-[clamp(3.5rem,7vw,7rem)] text-white uppercase leading-[0.9] mb-6">
               YOUR<br />GOALS.<br /><span className="text-[#FF6B35]">YOUR</span><br />COACH.
             </h1>
           </Reveal>
