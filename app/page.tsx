@@ -42,7 +42,7 @@ function Header() {
           {['Trainers', 'Programs', 'Pricing', 'Contact'].map(l => (
             <a key={l} href={`#${l.toLowerCase()}`} className="font-body text-sm text-[#8A8A8A] hover:text-white uppercase tracking-wider transition-colors">{l}</a>
           ))}
-          <a href="#" data-cg-el="hero_cta_primary" text-white font-heading font-bold text-sm uppercase tracking-wider px-5 py-2.5 transition-colors">Book Free Consult
+          <a href="#" data-cg-el="hero_cta_primary" className="text-white font-heading font-bold text-sm uppercase tracking-wider px-5 py-2.5 transition-colors">Book Free Consult
           </a>
         </nav>
         <button onClick={() => setOpen(!open)} className="md:hidden text-white">{open ? <X size={24} /> : <Menu size={24} />}</button>
