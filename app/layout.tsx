@@ -2,9 +2,9 @@
 import type { Metadata } from 'next';
 import { Montserrat, Open_Sans } from 'next/font/google';
 import './globals.css';
-import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
+import { getGarrison365Config, buildCssVars } from '@/lib/garrison365-config';
 
-import { KorivaLivePreview } from '@/components/KorivaLivePreview';
+import { Garrison365LivePreview } from '@/components/Garrison365LivePreview';
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400','500','600','700','800','900'], variable: '--font-montserrat' });
 const openSans = Open_Sans({ subsets: ['latin'], weight: ['400','500','600'], variable: '--font-open-sans' });
 
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const cfg = await getKorivaConfig();
+  const cfg = await getGarrison365Config();
   const vars = buildCssVars(cfg?.brand);
   return (
     <html lang="en" className={`${montserrat.variable} ${openSans.variable}`} style={vars as React.CSSProperties}>
-      <body>{children}<KorivaLivePreview /></body>
+      <body>{children}<Garrison365LivePreview /></body>
     </html>
   );
 }

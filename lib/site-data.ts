@@ -127,7 +127,7 @@ export const pricing = [
   },
 ];
 
-export const koriva = {
+export const garrison365 = {
   gymSlug: 'grind-pt',
   baseUrl: 'https://app.codegyms.com',
 };
